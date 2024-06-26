@@ -1,0 +1,41 @@
+@use "./variables" as *;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: $very-dark-blue;
+
+    main {
+        background-color: $dark-desaturated-blue;
+        border-radius: 10px;
+
+        h1, .stats {
+            color: $white;
+
+            span{
+                color: $soft-violet;
+            }
+        }
+
+        .main-paragraph{
+            color: $slightly-transparent-white;
+        }
+
+        .stat-heading {
+            color: $slightly-transparent-white2;
+        }
+    }
+    
+    p {
+        display: flex;
+        flex-direction: column;
+    }
+}
